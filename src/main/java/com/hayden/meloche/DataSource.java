@@ -1,7 +1,9 @@
 package com.hayden.meloche;
 
 
+import com.udojava.evalex.Expression;
+
 public interface DataSource {
-    String getValue(String key);
+    Expression.LazyNumber getValue(String key);
     boolean supportsHistoric();
 }
